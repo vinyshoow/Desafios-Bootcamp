@@ -1,0 +1,149 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;        
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background: #07040f;
+}
+header{
+  padding: 30px;
+  background: #1d1b22;
+}
+
+header .links{
+  text-align: left;
+}
+header .links a{
+  color: white;
+  font-size: 25px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.cards{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card{
+  background-color: #1d1b22;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card:hover{
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.card_image-container img{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  
+}
+
+.card_content{
+  padding: 20px;
+  height: 60px;
+  
+}
+
+
+.card_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  height: 30px;
+  
+  
+}
+
+.card_price{
+   text-align: center;
+   background-color: #18d130;
+   margin-bottom: 7px;
+   border-radius: 10px;
+   
+   
+}
+
+p{
+  color: #ffffffd8;
+}
+
+.modal-overlay{
+  background-color: rgba(0, 0, 0, 0.7) ;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal{
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal{
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal .maximize-modal{
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* ====MODAL.ACTIVE ==== */
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay .maximize{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+iframe{
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
+
+
+
+
+
+/* header .links a:hover{
+  color: #ffffff;
+  transition: color 500ms;
+  text-decoration: underline;
+} */
