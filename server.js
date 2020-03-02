@@ -17,7 +17,12 @@ nunjucks.configure("views", {
   express:server
 })
 
+
 server.get("/", function (req, res){
+  return res.render("home");
+})
+
+server.get("/about", function (req, res){
   return res.render("about");
 })
 
