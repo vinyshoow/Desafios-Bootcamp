@@ -10,6 +10,7 @@ const server = express();
 
 server.use(express.static('css'));
 
+
 server.set("view engine", "html");
 
 nunjucks.configure("views", {
@@ -17,12 +18,13 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function (req, res){
-  return res.render("desafio2-1");
+  return res.render("about");
 })
 
-server.get("/desafio2-2", function (req, res){
-  return res.render("desafio2-2");
+server.get("/courses", function (req, res){
+  return res.render("courses");
 })
+
 
 server.listen(3333, function(){
   console.log('Server is RUNNING');
