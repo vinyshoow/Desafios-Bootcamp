@@ -39,6 +39,7 @@ header .links a{
   border-radius: 10px;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: grid;
 }
 
 .card:hover{
@@ -65,17 +66,13 @@ header .links a{
   grid-template-columns: 1fr 1fr;
   padding: 20px;
   height: 30px;
-  
-  
+  align-items: center;
 }
 
 .card_price{
    text-align: center;
    background-color: #18d130;
-   margin-bottom: 7px;
    border-radius: 10px;
-   
-   
 }
 
 p{
