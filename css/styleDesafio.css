@@ -138,3 +138,9 @@ div ul ul li{
   transition: color 500ms;
   text-decoration: underline;
 }
+
+#not-found{
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
