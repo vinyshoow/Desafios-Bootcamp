@@ -101,7 +101,7 @@ p{
   color: black;
   position: absolute;
   right: 8px;
-  top: 8px;
+  top: 5px;
   cursor: pointer;
 }
 
@@ -135,12 +135,26 @@ iframe{
   top: 5%;
 }
 
+/* description page */
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
+.description .card:hover{
+  border: 1px solid black;
+  border-radius: 8px;
+}
 
+.card_curso-container {
+  position: relative;
+  padding-top: 80%;
+}
 
-
-/* header .links a:hover{
-  color: #ffffff;
-  transition: color 500ms;
-  text-decoration: underline;
-} */
+.card_curso-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 8px;
+}

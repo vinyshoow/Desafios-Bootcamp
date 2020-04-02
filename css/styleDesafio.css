@@ -29,14 +29,13 @@ header .links a{
   padding: 30px;
   font-size: 25px;
   line-height: 40px;
-  margin: 0 16;
+  margin: 0 10px;
   text-decoration: none;
 }
 
 header .links a:hover{
   color: #ffffff;
   transition: color 500ms;
-  text-decoration: underline;
 }
 
 .cards{
@@ -130,13 +129,12 @@ div ul ul li{
   padding: 30px;
   font-size: 25px;
   line-height: 40px;
-  margin: 0 16;
+  margin: 0 16px;
   text-decoration: none;     
 }
 .links a:hover{
   color: #ffffff;
   transition: color 500ms;
-  text-decoration: underline;
 }
 
 #not-found{

@@ -5,13 +5,13 @@ const cards = document.querySelectorAll('.card');
 
 for (let card of cards){
   card.addEventListener("click", function(){
-    const linkId = card.getAttribute("id");
-    modalOverlay.classList.add('active');
-    modalOverlay.querySelector('iframe').src=`https://rocketseat.com.br/${linkId}`;
+    const cursoId = card.getAttribute("id");
+    window.location.href = `/description?id=${cursoId}`;    
   })
 }
 
-document.querySelector(".close-modal").addEventListener("click", function(){
+
+/* document.querySelector(".close-modal").addEventListener("click", function(){
   modalOverlay.classList.remove('active');
   modalOverlay.querySelector('iframe').src = "";
 
@@ -24,5 +24,5 @@ document.querySelector(".maximize-modal").addEventListener("click", function(){
   } else{
     modal.classList.add('maximize');
   }
-})
+}) */
 

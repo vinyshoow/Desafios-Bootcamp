@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Courses</title>
+    <title>{{item.title}}</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -17,49 +17,29 @@
     </header>  
 
 
-    <section class="cards">
+    <section class="description">
 
-      {%for item in items%}
+      
       <div class="card" id="{{item.id}}">
-          <div class="card_image-container">
-            <img src="{{item.img_url}}" alt="{{item.id}}">
+          <div class="card_curso-container">
+            <iframe src="https://www.rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
           </div>
     
-          <div class="card_content">
+          {# <div class="card_content">
             <p>{{item.title}}</p>
           </div>
           
           <div class="card_info">
             <p>{{item.duration}}</p>
             <p class="card_price">{{item.price}}</p>
-          </div>
+          </div> #}
       </div>
-      {% endfor %}
+      
       
     </section>
 
-    {# <div class="modal-overlay maximize">
-      <div class="modal">
-
-        <a class="close-modal">
-          <i class="material-icons">close</i>
-        </a>
-
-        <a class="maximize-modal">
-          <i class="material-icons">maximize</i>
-        </a>
-
-        <div class="modal-content">
-          <!-- video aqui -->
-          {# <iframe src="" frameborder="0"></iframe> #}
-
-       {#  </div>
-      </div> #}
-    </div>
-
-    <script src="/scriptsDesafio.js"></script>
-
     
+
   </body>
 
 </html>

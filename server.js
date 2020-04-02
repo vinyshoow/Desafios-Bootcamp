@@ -16,7 +16,10 @@ server.use(express.static('css'));
 server.set("view engine", "njk");
 
 nunjucks.configure("views", {
-  express:server
+  express:server,
+  autoescape: false,
+  noCache: true
+
 })
 
 
@@ -29,14 +32,26 @@ server.get("/about", function (req, res){
 })
 
 server.get("/courses", function (req, res){
-  return res.render("courses", { items: cursos});
+ 
+  return res.render("courses", { items: cursos });
+})
+
+server.get("/description", function(req, res){
+  const id = req.query.id;
+  
+  const curso = cursos.find(function(curso){
+    return curso.id == id;
+  })
+
+  if(!curso) {
+    res.send('Course not-found');
+  }
+  return res.render("description", {item: curso});
 })
 
 server.use(function(req,res){
-  res.status(404).render("not-found")
+  res.status(404).render("not-found");
 })
 
 
-server.listen(3333, function(){
-  console.log('Server is RUNNING');
-})
+server.listen(3333);
