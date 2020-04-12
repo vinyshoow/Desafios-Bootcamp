@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vinyshoow/Desafios-Bootcamp#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "minimist": "^1.2.5",
     "nunjucks": "^3.2.0"
   },
   "devDependencies": {
